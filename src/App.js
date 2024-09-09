@@ -1,16 +1,16 @@
-import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
+import { HashRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
-import Join from "./Component/join/join";
 import Chat from "./Component/chat/chat";
+import Join from "./Component/join/join";
 function App() {
   return (
     <>
-      <Router>
+      <HashRouter>
         <Routes>
           <Route path="/" Component={Join} />
           <Route path="/chat" Component={Chat} />
         </Routes>
-      </Router>
+      </HashRouter>
     </>
   );
 }
